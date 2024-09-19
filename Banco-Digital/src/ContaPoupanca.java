@@ -5,9 +5,17 @@ public class ContaPoupanca extends Conta {
 		super(cliente);
 	}
 
+	
+	public double rendimento(int meses) {
+		for(int i=0; i<meses; i++) {
+			saldo = saldo + (saldo*0.01);
+		}
+		return saldo;
+	}
+	
 	@Override
 	public void imprimirExtrato() {
-		System.out.println("=== Extrato Conta Poupança ===");
+		System.out.println("=== Extrato Conta PoupanÃ§a ===");
 		super.imprimirInfosComuns();
 	}
 }
