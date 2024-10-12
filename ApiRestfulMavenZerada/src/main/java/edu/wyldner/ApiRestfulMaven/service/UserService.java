@@ -1,0 +1,11 @@
+package edu.wyldner.ApiRestfulMaven.service;
+
+import edu.wyldner.ApiRestfulMaven.domain.model.User;
+
+public interface UserService {
+
+    User findById(Long id);
+
+    User create(User userToCreate);
+}
+
